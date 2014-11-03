@@ -14,7 +14,7 @@ that you can include snippets of code from your Java project. This makes sure
 that the examples in the Reference Guide actually compile, and if we do it right
 that they even work as advertised.
 
-You can see this link:src/main/asciidoct/ajax/ajaxbehaviours.adoc[in action in the docs here].
+You can see this link:src/main/asciidoc/ajax/ajaxbehaviours.adoc[in action in the docs here].
 
 == Caveats
 
