@@ -59,7 +59,7 @@ add(form.add(textField));
 
 ==== AbstractAjaxTimerBehavior
 
-`AbstractAjaxTimerBehavior` executes callback method @onTimer(AjaxRequestTarget target)@ at a specified interval. The behavior can be stopped and restarted at a later time with methods @stop(AjaxRequestTarget target)@ and @restart(AjaxRequestTarget target)@:
+`AbstractAjaxTimerBehavior` executes callback method `onTimer(AjaxRequestTarget target)` at a specified interval. The behavior can be stopped and restarted at a later time with methods `stop(AjaxRequestTarget target)` and `restart(AjaxRequestTarget target)`:
 
 [source,java]
 ----
