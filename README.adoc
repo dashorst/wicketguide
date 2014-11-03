@@ -1,0 +1,38 @@
+= Apache Wicket Reference Guide
+A Living and Breathing Reference Guide for Apache Wicket
+:article:
+
+This project features an alternative to the current GDoc based Reference Guide
+for Apache Wicket. As GDoc is declining in use (Groovy and Grails are migrating
+to Asciidoctor.org) and Asciidoctor.org is becoming more mainstream it seems
+like a good idea to evaluate what it brings to the table.
+
+== Living Code
+
+The major benefit of using Asciidoctor is that it can run in a Maven build and
+that you can include snippets of code from your Java project. This makes sure
+that the examples in the Reference Guide actually compile, and if we do it right
+that they even work as advertised.
+
+You can see this link:src/asciidoctor/ajax/ajaxbehaviours.adoc[in action in the docs here].
+
+== Caveats
+
+The current Maven setup doesn't work properly with including tagged regions from
+XML/HTML files, but the most recent (1.5.1) commandline Asciidoctor does work as
+advertised.
+
+To generate the docs use:
+
+[source,bash]
+----
+./gendocs
+----
+
+which will start Asciidoctor using the same commandline the Maven plugin does
+(without some incompatible commandline options). The generated documentation can
+be found in `target/generated-resources/index.html`
+
+When the *Asciidoctor Maven Plugin* **finally** ships with a working XML/HTML
+tag based include directive we can remove this `gendocs` file and fully rely on
+Maven as God intended.

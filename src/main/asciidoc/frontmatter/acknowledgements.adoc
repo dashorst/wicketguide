@@ -1,0 +1,1 @@
+We'd like to thank the following contributors for their work on this manual: Andrea Del Bene, Martin Grigorov, Carsten Hufe, Christian Kroemer, Daniel Bartl, Paul Borș.

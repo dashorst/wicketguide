@@ -1,0 +1,14 @@
+#!/bin/sh
+mkdir -p target/generated-resources
+asciidoctor -D /Users/dashorst/Workspaces/wicket/reference/target/generated-docs \
+  -B /Users/dashorst/Workspaces/wicket/reference/src/main/asciidoc \
+  -C \
+  -d book \
+  -b html \
+  -a sourceDir=/Users/dashorst/Workspaces/wicket/reference/src/main/java/org/apache/wicket/guide \
+  -a attribute-missing=skip \
+  -a allow-uri-read=allow-uri-read \
+  -a attribute-undefined=drop-line \
+  -a imagesdir=images \
+  -a source-highlighter=coderay \
+  /Users/dashorst/Workspaces/wicket/reference/src/main/asciidoc/index.adoc

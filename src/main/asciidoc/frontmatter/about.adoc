@@ -1,0 +1,1 @@
+This guide is based on Wicket 6. However if you are using an older version you should find this guide useful as well, but it's likely that the code and the snippets won't work with your version.
